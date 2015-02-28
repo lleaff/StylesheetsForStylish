@@ -1,0 +1,58 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("github.com") {
+ 
+ 
+  body, .boxed-group-inner, .menu, .menu-item.selected, .sunken-menu, .sunken-menu-item.selected, .form-control, input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], textarea, .social-count, .conversation-list-heading .inner, .tabnav-tab.selected, .commit-tease .commit-meta, #readme .markdown-body, #readme .plain, .file-history-tease .participation, .highlight  {
+    background-color:#F6F6F6!important;
+  }
+   .commit-tease .commit-meta {
+    background-color:#F1F1F1!important;
+  }
+
+  .boxed-group > h3, .boxed-group .heading {
+    background-color:#EAEAEA!important;
+  }
+
+  .sunken-menu  {
+    background-image: linear-gradient(to right, #EAEAEA 0%, #F6F6F6 8px)!important;
+    box-shadow: 1px 0px 0px #EAEAEA inset!important;
+  }
+  .sunken-menu:before {
+    background-image: linear-gradient(#F6F6F6, rgba(255, 255, 255, 0))!important;
+  }
+  .sunken-menu:after {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #F6F6F6)!important;
+  }
+ 
+  .commit-tease {
+    background: none repeat scroll 0% 0% #E1EBF1!important;
+    border-color: #B2C2CA #B2C2CA #D3E1E8!important;
+  }
+ 
+  .file {
+    border-color:#C8C8C8!important;
+  }
+  .file .meta {
+    background-color:#F2F2F2!important;
+  }
+ 
+  .button.primary, .minibutton.primary {
+    background-color: #64AC56!important;
+background-image: linear-gradient(#8DD080, #64AC56)!important;
+border-color: #64AC56!important;
+  }
+ 
+ 
+ 
+  /* Permalinks icons */
+  .markdown-format h1 .octicon-link, .markdown-format h2 .octicon-link, .markdown-format h3 .octicon-link, .markdown-format h4 .octicon-link, .markdown-format h5 .octicon-link, .markdown-format h6 .octicon-link {
+    color:#AAA!important;
+   
+  }
+ 
+
+  /* Update your profile nag */
+  .new-user-avatar-cta { display: none!important; }
+
+ 
+}
