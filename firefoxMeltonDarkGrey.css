@@ -1,0 +1,351 @@
+/* ===================================== *
+      Melton - Dark grey Firefox CSS
+          mod of:
+      Melbourne by noha-ra
+      http://fav.me/d7u524x
+ * ===================================== */
+
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* ========='Hide Caption Titlebar Plus' extension' ======== */
+#main-window[sizemode="maximized"] #tab-view-deck {
+    margin-top:-10px!important;
+}
+#hcp-top-box { 
+    background-color:#262626!important;
+    height:1px!important;
+}
+/* ========================================================= */
+
+#navigator-toolbox {
+    background-color:#262626!important;
+}
+
+/*remove internal border*/
+#main-window:not([chromehidden*="toolbar"])[sizemode="normal"]
+{
+    margin-top:-1px!important;
+    margin-left:-1px!important;
+    margin-right:-1px!important;
+    margin-bottom: -1px !important;
+}
+
+
+/*comment these lines to have normal tab width*/
+/* .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
+    min-width: 10px !important;
+    max-width: 200px !important;
+} */
+
+/* removes ugly cloud thing */
+#TabsToolbar:not(:-moz-lwtheme)::after {display: none;}
+/* Remove the following line if you want the text color of unselected tabs to be black (Firefox default) */
+/*#TabsToolbar .tabbrowser-tab:not([selected]) {color: #000000;} *//* rgba(255,255,255,0.9) */ /* _R: doesn't do anything */
+
+#TabsToolbar {
+    background: #262626!important;
+    padding-bottom:0!important;
+    margin-bottom:0!important;
+    border-bottom:none!important;
+}
+
+#TabsToolbar .tabbrowser-tabs {
+    min-height: 30px !important;
+    margin-top: 0px !important;
+    margin-bottom: -1px !important;
+    text-align: center !important;
+    margin-left: -17px !important;
+    margin-right: -16px !important;
+    padding-bottom:0px!important;
+    border-bottom:none!important;
+}
+
+#tabbrowser-tabs tab .tab-close-button {
+    display: none !important;
+}
+
+/* Tab icons */
+.tabbrowser-tab:not([pinned]) .tab-icon-image {
+    /* display: none !important; */
+}
+.tabbrowser-tab .tab-icon-image {
+    filter: grayscale(70%)!important;
+    opacity: 0.8!important;
+}
+.tabbrowser-tab[selected] .tab-icon-image {
+    opacity: 0.9!important;
+}
+
+
+#TabsToolbar .tabbrowser-tab {
+    -moz-border-top-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-bottom-colors: none !important;
+    border-bottom:none!important;
+    border-style: none !important;
+    border-width: 0px 0px 0px 0px !important;
+    text-shadow: none !important; /* 0 0 4px rgba(80,80,80,.2)*/ 
+    padding: 4px 0px !important;
+    border-radius: 0px !important;
+    background: #262626 !important;
+    background-clip: padding-box !important;
+    transition: all .1s !important;
+    margin-left: 0px !important;
+    color: #bbbbbb!important;
+    font-family: 'Segoe UI' !important;
+    font-size: 13px !important;
+    border-color: #151515 !important;
+    
+}
+
+#TabsToolbar .tabbrowser-tab[last-visible-tab] {
+    border-top-right-radius: 2px !important;
+    /*border-bottom-right-radius: 3px !important;*/
+    border-right-width: 0px !important;
+    margin-right: 1px !important;
+    border-right-color: rgba(0,0,0,0) !important;
+}
+
+#TabsToolbar .tabbrowser-tab[first-visible-tab] {
+    border-top-left-radius: 2px !important;
+    /*border-bottom-left-radius: 3px !important;*/
+    border-left-width: 0px !important;
+    margin-left: 2px !important;
+    border-left-color: rgba(0,0,0,0) !important;
+}
+
+#TabsToolbar .tabbrowser-tab[afterselected] {
+}
+
+#TabsToolbar .tabbrowser-tab[selected] {
+    color: #eeeeee !important;
+    background: #404040 !important;
+    padding: 0px 0px !important;
+    
+}
+
+#TabsToolbar .tabs-newtab-button:hover,
+#TabsToolbar .tabbrowser-tab:hover:not([selected]) {
+    border-color: #000 !important;
+    background-color: #333333 !important;
+}
+
+#TabsToolbar .tab-background {
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+#TabsToolbar .tab-background-start,
+#TabsToolbar .tab-background-end {
+    display: none !important;
+}
+
+#TabsToolbar .tab-background-middle {
+    margin: -4px -2px !important;
+    background: transparent !important;
+}
+
+#TabsToolbar .tabbrowser-tab:after,
+#TabsToolbar .tabbrowser-tab:before {
+    display: none !important;
+}
+
+#TabsToolbar .tabs-newtab-button {
+    border-width: 1px 1px 0 1px !important;
+    margin: 0 !important;
+    width: auto !important;
+    padding: 0 5px !important;
+}
+
+
+
+#nav-bar {
+    box-sizing:content-box!important;
+    height:22px!important;
+    padding-top:0px!important;
+    padding-bottom:0px!important;
+    
+}
+
+
+#addon-bar,
+#PersonalToolbar,
+#nav-bar {
+    background: #262626 !important;
+    box-shadow: none !important;
+    background-clip: padding-box !important;
+    border: none!important;
+    border-color: rgba(0,0,0,.25) !important;
+    border-radius: 0 !important;
+    padding-top:0px!important;
+}
+
+.subviewbutton.panel-subview-footer {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+
+/* URL BAR */
+
+/* remove back/fwd */
+#nav-bar  #back-button /* > .toolbarbutton-icon */ {
+    display: none !important;
+}
+#forward-button {
+    display: none !important;
+}
+
+/*styling*/
+#urlbar-container {
+    -moz-box-align:start!important; /* makes urlbar float top */
+}
+#urlbar-wrapper, #urlbar-container {
+    padding-top:0px!important;
+    margin-top: 0px!important;
+}
+#searchbar > .searchbar-textbox,
+#urlbar {
+    border: 0px #151515 !important;
+    /* text-align: center !important; */
+    background: #111111 !important;
+    margin-top: -2px !important;
+    margin-left: 0px !important;
+    border-radius: 0px;
+    padding: 0px 0px 0px 10px !important;
+    color: #dddddd !important;
+    height: 22px;
+}
+#omnibar-defaultEngine { /* Search engine icon */
+    filter: grayscale(100%)!important;
+    opacity:0.5!important;
+    margin-right:1px!important;
+    margin-top:1px!important;
+}
+
+#nav-bar {
+    height: 30px;
+    background-color: #262626 !important;
+    border-bottom: 0px solid #151515 !important;
+    border-top: none !important;
+    margin-bottom: -1px !important;
+    margin-top: 1px !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin-right: 1px !important;
+    margin-left: 1px !important;
+    padding-top:0px!important;
+}
+
+/* Puts the PanelUI-button on the left */
+/* #PanelUI-button, #customization-panel-container,
+#customization-panelWrapper .panel-arrow,
+#ctr_panelui-button,
+#wrapper-ctr_panelui-button {
+
+    -moz-box-ordinal-group: 0
+
+} */
+
+#nav-bar-customization-target {
+    box-sizing:content-box!important;
+    padding:0!important;
+    margin:0!important;
+}
+
+#PanelUI-button {
+
+    background-position: 100% 0, calc(100% - 1px) 0, calc(100% - 2px) 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPAQMAAAABGAcJAAAABlBMVEUAAABAQEBTWDqaAAAAAXRSTlMAQObYZgAAABFJREFUCNdjgAD5D0CEkw0DAJYqBluASAi4AAAAAElFTkSuQmCC)!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    box-shadow: none !important;
+    width: 5px !important;
+    /*display: none !important; /*COMMENT THIS LINE FOR A MENU BUTTON*/
+}
+#PanelUI-button .button-icon,
+#PanelUI-button .button-text{
+    display: none !important;
+}
+#PanelUI-menu-button {
+    opacity: 0 !important;
+    width: 5px !important;
+    margin-right: -5px !important;
+}
+
+
+#identity-box, #dropmarker-icon, #historydropmarker, #autocomplete-history-dropmarker, #urlbar-history-dropmarker, #dropmarker {
+    display: none !important;
+}
+
+#autocomplete-history-dropmarker, #urlbar-history-dropmarker, #urlbar-reload-button {
+    display: none !important;
+}
+
+.autocomplete-history-dropmarker.urlbar-history-dropmarker {
+    display: none !important;
+}
+
+#plugins-notification-icon, #notification-anchor-icon, #notification-popup-box {
+    display: none !important;
+
+}
+
+/* remove tab scrolling */
+.scrollbutton-up, .scrollbutton-down {
+    display: none !important;
+}
+#alltabs-button {
+    position:fixed!important;
+    top:50px!important;
+}
+/*downloads*/
+#downloads-button {
+    /*list-style-image: none!important;*/
+    background: url('http://i.imgur.com/dxQDPO2.png') !important;
+    background-size:16px 16px!important;
+    background-repeat: no-repeat  !important;
+    background-position: center !important;
+    opacity: 1 !important;
+    margin-left: 10px !important;
+    margin-right: 0px !important;
+    box-shadow: none !important;
+    width: 10px !important;
+}
+
+
+#nav-bar toolbarbutton {
+    padding-top:0px!important;
+    padding-bottom:0px!important;
+    height:inherit!important;
+}
+
+#navbar .toolbarbutton-1.chromeclass-toolbar-additional {
+    padding:0px!important;
+    margin:0!important;
+    
+}
+
+/*#toolbarbutton-icon .Downloads,
+#downloads-indicator-icon,
+#downloads-indicator-progress-area,
+#downloads-button .button-text {
+    display: none !important;
+}*/
+
+#downloads-indicator-anchor {
+    /*background-color: #f00!important; TODO*/
+    
+    height:3px!important;
+    opacity: 0.9 !important;}
+
+#downloads-button:hover {
+    opacity: 1 !important;
+    box-shadow: none !important;
+    background: url('http://i.imgur.com/I8kiKbo.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
