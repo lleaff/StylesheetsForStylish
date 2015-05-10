@@ -102,6 +102,10 @@ option:hover, option:focus, option:active, option:checked { background: linear-g
 /* gray */ .token.punctuation,.token.operator { color: #ba3 !important; }
 /* red/magenta */ .token.property, .token.tag, .token.boolean, .token.number, .token.function { color: #e6a !important; }
 
+/* code line number highlight */
+.line-highlight::before, .line-highlight[data-end]::after { color:#ddd!important; box-shadow:none!important; }
+
+  
 span[title="Recommendation"] { color: #ccc !important; background: #262 !important; }
 span[title="Working Draft"] { color: #ccc !important; background: #851 !important; }
 span[title^="Editor's Draft"], span[title="Editor's Draft (unofficial)"] { color: #ccc !important; background: #933 !important; }
