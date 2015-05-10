@@ -1,5 +1,5 @@
 /* License: CC0 Public Domain (creativecommons.org/publicdomain/zero/1.0/) */
-/* Version: 2015-05-03 edit of
+/* Version: 2015-05-11 edit of
   2015-03-13 by grom (userstyles.org/styles/65358) */
 /* AGENT_SHEET */
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -12,12 +12,35 @@ html > body, table, tbody, tr, td:not([style*="background"]), h1, h2, h3, ul, ol
 
 div, tt, a, span, img { background-color: transparent !important; }
 
-#content, #tabzilla-panel, #toc, table.diff { background: #222 !important; }
+#content, #tabzilla-panel{ background: #222 !important; }
+
+/* Header colors */
+#main-header .logo { filter: invert(100%) hue-rotate(330deg); opacity:0.5!important; }
+#main-nav > ul > li > a:active, #main-nav > ul > li > a:hover, #main-nav > ul > li > a:link, #main-nav > ul > li > a:visited { color:#888!important; }
+i.icon-search { color:#777!important; }
+/* "mozilla" tab top right of the header */
+#tabzilla {  opacity:0.1!important; }
   
-#tabzilla { filter: invert(100%); }
+/* Header height */
+#tabzilla { height:30px!important; width:120px!important; background-size:120px!important; background-position:-4px 0px!important; }
+#tabzilla:after { top:8px!important; }
+.header-login { top: 4px!important; }
+#main-nav > ul { margin-top: 10px!important; margin-bottom: 10px!important; }
+#main-header .logo { margin-top:0px!important; }
+ 
 
 option, kbd, pre, th, #main-header, .submenu, .from-search-toc { background: #181818 !important; }
 
+/* Naviguation links on the left */
+.quick-links li { padding-top: 5px!important; /* default: 8px */ }
+.quick-links li a { color:#ccc!important; }
+  
+.quick-links .title.see-also, table.diff  { background-color:#2b2b2b!important; }
+
+/* Table Of Content, floating on the right */  
+#toc { background-color: #292929!important; }
+#toc a { color:#ccc!important; }
+  
 .diff_add, .diff_sub, .diff_chg { background: #111 !important; }
 
 mark, .warning { background: #933 !important; border-color: transparent !important; }
@@ -39,10 +62,10 @@ div[style*="background: #eeee00;"] { background: #ff0 !important; } /* yellow: l
 * { color: inherit !important; border-color: #555 !important; text-shadow: none !important; box-shadow: none !important; }
 html { color: #ccc !important; }
 hr { height: 0 !important; border: 0 solid #555 !important; border-width: 1px 0 0 !important; }
-a { color: #4be !important; }
-a:hover { color: #7df !important; }
-a:visited { color: #98f !important; }
-a:visited:hover { color: #baf !important; }
+a { color: #b67 !important; }
+a:hover { color: #d89 !important; }
+/* a:visited { color: #b8c !important; }
+a:visited:hover { color: #dae !important; } */
 a.new, .newpage { color: #f55 !important; }
 a.new:hover { color: #f77 !important; }
 /* don't use .error, because of body.error */
@@ -56,7 +79,7 @@ input[type="submit"], input[type="button"], input[type="file"], input[type="rese
 opacity:0.7!important;}
 
 input[type="submit"]:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, button:hover
-{ border-color: #158 !important; background-color: #158 !important; color: #fff !important; }
+{ border-color: #867 !important; background-color: #867 !important; color: #fff !important; }
 
 button, input, select, textarea { -moz-appearance: none !important; }
 input[type="radio"], input[type="checkbox"] { color: #4be !important; background: #222 !important; border-color: #999 !important; }
@@ -72,12 +95,12 @@ option:hover, option:focus, option:active, option:checked { background: linear-g
 #wiki-content img:not(:hover) { opacity: .7 !important; }
 
 .cssprop { background: /*#320*/ #431 !important; border-left-color: #960 !important; }
-:not(pre) > code[class*="language-"], pre[class*="language-"] { border-left-color: #158 !important; }
+:not(pre) > code[class*="language-"], pre[class*="language-"] { border-left-color: #346 !important; }
 /* comments */ .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #777 !important; }
-/* blue */ .token.atrule, .token.attr-value, .token.keyword { color: #5bf !important; }
-/* green */ .token.selector, .token.attr-name, .token.string { color: #5f5 !important; }
-/* gray */ .token.punctuation,.token.operator { color: #fa0 !important; }
-/* red/magenta */ .token.property, .token.tag, .token.boolean, .token.number, .token.function { color: #f5f !important; }
+/* blue */ .token.atrule, .token.attr-value, .token.keyword { color: #99f !important; }
+/* green */ .token.selector, .token.attr-name, .token.string { color: #ad5 !important; }
+/* gray */ .token.punctuation,.token.operator { color: #ba3 !important; }
+/* red/magenta */ .token.property, .token.tag, .token.boolean, .token.number, .token.function { color: #e6a !important; }
 
 span[title="Recommendation"] { color: #ccc !important; background: #262 !important; }
 span[title="Working Draft"] { color: #ccc !important; background: #851 !important; }
@@ -94,6 +117,8 @@ span[title^="Editor's Draft"], span[title="Editor's Draft (unofficial)"] { color
 .diff_sub { color: #f77 !important; }
 .diff_chg { color: #ff7 !important; }
 
-.htab > ul > li:not(.selected) { background-color: #2a2a2a !important; border: none!important; }
+.htab > ul > li:not(.selected) { background-color: #2c2c2c !important; border: none!important; }*
+  
+ul.tags li { background-color: #2d2d2d!important; border-color: #303030!important; }
   
 }
