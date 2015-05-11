@@ -9,35 +9,27 @@
 /* =Form
 ========================================================= */
 /* Header ******/
-
 #main-header {
 	border-top: none!important;
 	border-bottom: none!important; }
-
 #tabzilla {
 	height: 30px!important;
 	width: 120px!important;
 	background-size: 120px!important;
 	background-position: -4px 0px!important; }
-
 #tabzilla:after {
 	top: 8px!important; }
-
 .header-login {
 	top: 4px!important; }
-
 #main-nav > ul {
 	margin-top: 10px!important;
 	margin-bottom: 10px!important; }
-
 #main-header .logo {
 	margin-top: 0px!important; }
-
+  
 /* Naviguation links on the left */
-
 .quick-links li {
-	padding-top: 5px!important;
-	/* default: 8px */ }
+	padding-top: 5px!important; /* default: 8px */ }
 
 /* =Colors
 ========================================================= */
@@ -389,4 +381,3 @@ footer {
 footer p::after {
 	display: none!important; }
  }
-
