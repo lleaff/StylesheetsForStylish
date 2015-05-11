@@ -1,57 +1,144 @@
 /* License: CC0 Public Domain (creativecommons.org/publicdomain/zero/1.0/) */
-/* Version: 2015-05-11 edit of
+/* Version: 2015-05-03 edit of
   2015-03-13 by grom (userstyles.org/styles/65358) */
 /* AGENT_SHEET */
+
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("developer.mozilla.org") {
 
-html { background: #000 !important; }
+/* =Form
+========================================================= */
+/* Header ******/
 
-html > body, table, tbody, tr, td:not([style*="background"]), h1, h2, h3, ul, ol, li, dl, dt, dd, p, blockquote, q, cite, fieldset, form, label, iframe, header, main, footer, nav, article, section, caption, center, abbr, sub, sup, font, code,
-/* images */ .lwrap { background: none !important; }
+#main-header {
+	border-top: none!important;
+	border-bottom: none!important; }
 
-div, tt, a, span, img { background-color: transparent !important; }
+#tabzilla {
+	height: 30px!important;
+	width: 120px!important;
+	background-size: 120px!important;
+	background-position: -4px 0px!important; }
 
-#content, #tabzilla-panel{ background: #222 !important; }
+#tabzilla:after {
+	top: 8px!important; }
 
-/* Header colors */
-#main-header .logo { filter: invert(100%) hue-rotate(330deg); opacity:0.5!important; }
-#main-nav > ul > li > a:active, #main-nav > ul > li > a:hover, #main-nav > ul > li > a:link, #main-nav > ul > li > a:visited { color:#888!important; }
-i.icon-search { color:#777!important; }
-/* "mozilla" tab top right of the header */
-#tabzilla {  opacity:0.1!important; }
-  
-/* Header height */
-#tabzilla { height:30px!important; width:120px!important; background-size:120px!important; background-position:-4px 0px!important; }
-#tabzilla:after { top:8px!important; }
-.header-login { top: 4px!important; }
-#main-nav > ul { margin-top: 10px!important; margin-bottom: 10px!important; }
-#main-header .logo { margin-top:0px!important; }
- 
+.header-login {
+	top: 4px!important; }
 
-option, kbd, pre, th, #main-header, .submenu, .from-search-toc { background: #181818 !important; }
+#main-nav > ul {
+	margin-top: 10px!important;
+	margin-bottom: 10px!important; }
+
+#main-header .logo {
+	margin-top: 0px!important; }
 
 /* Naviguation links on the left */
-.quick-links li { padding-top: 5px!important; /* default: 8px */ }
-.quick-links li a { color:#ccc!important; }
-  
-.quick-links .title.see-also, table.diff  { background-color:#2b2b2b!important; }
 
-/* Table Of Content, floating on the right */  
-#toc { background-color: #292929!important; }
-#toc a { color:#ccc!important; }
-  
-.diff_add, .diff_sub, .diff_chg { background: #111 !important; }
+.quick-links li {
+	padding-top: 5px!important;
+	/* default: 8px */ }
 
-mark, .warning { background: #933 !important; border-color: transparent !important; }
+/* =Colors
+========================================================= */
+
+html {
+	background: #000 !important; }
+
+html > body, table, tbody, tr, td:not([style*="background"]), h1, h2, h3, ul, ol, li, dl, dt, dd, p, blockquote, q, cite, fieldset, form, label, iframe, header, main, footer, nav, article, section, caption, center, abbr, sub, sup, font, code, /* images */ .lwrap {
+	background: none !important; }
+
+div, tt, a, span, img {
+	background-color: transparent !important; }
+
+#content,
+#tabzilla-panel,
+footer {
+	background: #222 !important; }
+
+/* Header *****/
+
+#main-header .logo {
+	filter: invert(100%) hue-rotate(330deg);
+	opacity: 0.5!important; }
+
+#main-nav > ul > li > a:active,
+#main-nav > ul > li > a:hover,
+#main-nav > ul > li > a:link,
+#main-nav > ul > li > a:visited {
+	color: #888!important; }
+
+i.icon-search {
+	color: #777!important; }
+
+/* "mozilla" tab top right of the header */
+
+#tabzilla {
+	opacity: 0.1!important; }
+
+option,
+kbd,
+pre,
+th,
+#main-header,
+.submenu,
+.from-search-toc {
+	background: #181818 !important; }
+
+/* Naviguation links on the left */
+
+.quick-links li a {
+	color: #ccc!important; }
+
+.quick-links .title.see-also,
+table.diff {
+	background-color: #2b2b2b!important; }
+
+/* Table Of Content, floating on the right */
+
+#toc {
+	background-color: #262626!important; }
+
+#toc a {
+	color: #aaa!important; }
+
+.diff_add,
+.diff_sub,
+.diff_chg {
+	background: #111 !important; }
+
+mark,
+.warning {
+	background: #933 !important;
+	border-color: transparent !important; }
 
 /* example; .experimental: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
-.notice.experimental, .experimental, .draft, .overheadIndicator.draft { background: #332 !important; border-color: #664 !important; }
 
-/* header search */ .search-wrap, .reviews, .warning-review, .note, /* Eyedropper */ .geckoVersionNote, /* nsILocalFile */ .geckoVersionHeading { background: #333 !important; border-color: #555 !important; }
+/* .notice.experimental,
+.experimental,
+.draft,
+.overheadIndicator.draft {
+background: #332 !important;
+border-color: #664 !important; } */
+
+/* header search */
+
+.search-wrap,
+.reviews,
+.warning-review,
+.note,
+/* Eyedropper */
+
+.geckoVersionNote,
+/* nsILocalFile */
+
+.geckoVersionHeading {
+	background: #333 !important;
+	border-color: #555 !important; }
 
 /* example; obsolete content: https://developer.mozilla.org/en-US/docs/E4X */
-.line-highlight { background: rgba(140,140,140,.2) !important; }
+.line-highlight {
+	background: rgba(140, 140, 140, .2) !important; }
 
 /* example: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIXULRuntime OR ./nsILocalFile */
 div[style*="background: #dd0000;"] { background: #700 !important; } /* red: nonexistent */
@@ -59,70 +146,247 @@ div[style*="background: #00dd00;"] { background: #070 !important; } /* green: su
 div[style*="background: #ff8000;"] { background: #f80 !important; } /* orange: deprecated */
 div[style*="background: #eeee00;"] { background: #ff0 !important; } /* yellow: last changed */
 
-* { color: inherit !important; border-color: #555 !important; text-shadow: none !important; box-shadow: none !important; }
-html { color: #ccc !important; }
-hr { height: 0 !important; border: 0 solid #555 !important; border-width: 1px 0 0 !important; }
-a { color: #b67 !important; }
-a:hover { color: #d89 !important; }
+* {
+	color: inherit !important;
+	border-color: #555 !important;
+	text-shadow: none !important;
+	box-shadow: none !important; }
+
+html {
+	color: #ccc !important; }
+
+hr {
+	height: 0 !important;
+	border: 0 solid #555 !important;
+	border-width: 1px 0 0 !important; }
+
+a {
+	color: #b67 !important; }
+
+a:hover {
+	color: #d89 !important; }
+
 /* a:visited { color: #b8c !important; }
+
 a:visited:hover { color: #dae !important; } */
-a.new, .newpage { color: #f55 !important; }
-a.new:hover { color: #f77 !important; }
+
+a.new,
+.newpage {
+	color: #f55 !important; }
+
+a.new:hover {
+	color: #f77 !important; }
+
 /* don't use .error, because of body.error */
-dl, ul, ol { -moz-column-rule-color: #555 !important; }
 
-::-moz-selection { background: #184880 !important; }
-::selection { background: #184880 !important; }
+dl,
+ul,
+ol {
+	-moz-column-rule-color: #555 !important; }
 
-input[type="submit"], input[type="button"], input[type="file"], input[type="reset"], button
-{ color: #ccc !important; border: 1px solid #444 !important; background: #1d1d1d !important; border-radius: 7px !important;
-opacity:0.7!important;}
+/* ::-moz-selection { background: #184880 !important; }
 
-input[type="submit"]:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, button:hover
-{ border-color: #867 !important; background-color: #867 !important; color: #fff !important; }
+::selection { background: #184880 !important; } */
 
-button, input, select, textarea { -moz-appearance: none !important; }
-input[type="radio"], input[type="checkbox"] { color: #4be !important; background: #222 !important; border-color: #999 !important; }
+input[type="submit"],
+input[type="button"],
+input[type="file"],
+input[type="reset"],
+button {
+	color: #ccc !important;
+	border: 1px solid #444 !important;
+	background: #1d1d1d !important;
+	border-radius: 7px !important;
+	opacity: 0.7!important; }
 
-input, select, textarea, input[type="text"] { background: #181818 !important; color: #ccc !important; padding: 2px !important; border: 1px solid #555 !important; }
-input[type] { border-width: 1px !important; border-style: solid !important; }
-textarea:hover, input:hover, select:hover, textarea:focus, input:focus, select:focus { border-color: #09f !important; }
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="file"]:hover,
+input[type="reset"]:hover,
+button:hover {
+	border-color: #867 !important;
+	background-color: #867 !important;
+	color: #fff !important; }
 
-select > button, .search-wrap > input[type="search"] { background-color: transparent !important; border: none !important; }
-option:hover, option:focus, option:active, option:checked { background: linear-gradient(#158,#158) !important; }
+button,
+input,
+select,
+textarea {
+	-moz-appearance: none !important; }
 
-#wiki-left, #toc { opacity: .6 !important; }
-#wiki-content img:not(:hover) { opacity: .7 !important; }
+input[type="radio"],
+input[type="checkbox"] {
+	color: #867 !important;
+	background: #222 !important;
+	border-color: #999 !important; }
 
-.cssprop { background: /*#320*/ #431 !important; border-left-color: #960 !important; }
-:not(pre) > code[class*="language-"], pre[class*="language-"] { border-left-color: #346 !important; }
-/* comments */ .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #777 !important; }
-/* blue */ .token.atrule, .token.attr-value, .token.keyword { color: #99f !important; }
-/* green */ .token.selector, .token.attr-name, .token.string { color: #ad5 !important; }
-/* gray */ .token.punctuation,.token.operator { color: #ba3 !important; }
-/* red/magenta */ .token.property, .token.tag, .token.boolean, .token.number, .token.function { color: #e6a !important; }
+input,
+select,
+textarea,
+input[type="text"] {
+	background: #181818 !important;
+	color: #ccc !important;
+	padding: 2px !important;
+	border: 1px solid #555 !important; }
+
+input[type] {
+	border-width: 1px !important;
+	border-style: solid !important; }
+
+textarea:hover,
+input:hover,
+select:hover,
+textarea:focus,
+input:focus,
+select:focus {
+	border-color: #867 !important; }
+
+select > button,
+.search-wrap > input[type="search"] {
+	background-color: transparent !important;
+	border: none !important; }
+
+option:hover,
+option:focus,
+option:active,
+option:checked {
+	background: linear-gradient(#158, #158) !important; }
+
+/* #wiki-left, #toc { opacity: .6 !important; } */
+
+#wiki-content img:not(:hover) {
+	opacity: .7 !important; }
+
+.cssprop {
+	background:
+	/*#320*/
+
+	#431 !important;
+	border-left-color: #960 !important; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	border-left-color: #346 !important; }
+
+/* comments */
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #777 !important; }
+
+/* blue */
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #99f !important; }
+
+/* green */
+
+.token.selector,
+.token.attr-name,
+.token.string {
+	color: #ad5 !important; }
+
+/* gray */
+
+.token.punctuation,
+.token.operator {
+	color: #ba3 !important; }
+
+/* red/magenta */
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function {
+	color: #e6a !important; }
 
 /* code line number highlight */
-.line-highlight::before, .line-highlight[data-end]::after { color:#ddd!important; box-shadow:none!important; }
 
-  
-span[title="Recommendation"] { color: #ccc !important; background: #262 !important; }
-span[title="Working Draft"] { color: #ccc !important; background: #851 !important; }
-span[title^="Editor's Draft"], span[title="Editor's Draft (unofficial)"] { color: #ccc !important; background: #933 !important; }
+.line-highlight::before,
+.line-highlight[data-end]::after {
+	color: #ddd!important;
+	box-shadow: none!important; }
 
-.inlineIndicator, .indicatorInHeadline, .blockIndicator, .overheadIndicator { background: none !important; }
-.readOnly { background: #333 !important; color: #ccc !important; }
-.unimplemented, .obsolete { background: #522 !important; color: #ccc !important; }
-/* requires min version */ .minVer, .jsMinVer, .mbMinVer,
-/* -moz-; -webkit- */ .prefixBox, /* requires Gecko x.y */ .standardNote, .optional, .renamed { background: #345 !important; color: #ccc !important; }
+span[title="Recommendation"] {
+	color: #ccc !important;
+	background: #262 !important; }
 
-/* history */ .revision-list-controls:before { filter: invert(1); }
-.diff_add { color: #7f7 !important; }
-.diff_sub { color: #f77 !important; }
-.diff_chg { color: #ff7 !important; }
+span[title="Working Draft"] {
+	color: #ccc !important;
+	background: #851 !important; }
 
-.htab > ul > li:not(.selected) { background-color: #2c2c2c !important; border: none!important; }*
-  
-ul.tags li { background-color: #2d2d2d!important; border-color: #303030!important; }
-  
-}
+span[title^="Editor's Draft"],
+span[title="Editor's Draft (unofficial)"] {
+	color: #ccc !important;
+	background: #933 !important; }
+
+/*
+.inlineIndicator,
+.indicatorInHeadline,
+.blockIndicator,
+.overheadIndicator {
+background: none !important; } */
+
+.readOnly {
+	background: #333 !important;
+	color: #ccc !important; }
+
+.unimplemented,
+.obsolete {
+	background: #522 !important;
+	color: #ccc !important; }
+
+/* requires min version */
+
+.minVer,
+.jsMinVer,
+.mbMinVer,
+/* -moz-; -webkit- */
+
+.prefixBox,
+/* requires Gecko x.y */
+
+.standardNote,
+.optional,
+.renamed {
+	background: #345 !important;
+	color: #ccc !important; }
+
+/* history */
+
+.revision-list-controls:before {
+	filter: invert(1); }
+
+.diff_add {
+	color: #7f7 !important; }
+
+.diff_sub {
+	color: #f77 !important; }
+
+.diff_chg {
+	color: #ff7 !important; }
+
+.htab > ul > li:not(.selected) {
+	background-color: #2c2c2c !important;
+	border: none!important; }
+
+* ul.tags li {
+	background-color: #2d2d2d!important;
+	border-color: #303030!important; }
+
+
+.wiki-block,
+footer {
+	opacity: 0.7!important; }
+
+/* Footer mozilla logo */
+
+footer p::after {
+	display: none!important; }
+ }
+
