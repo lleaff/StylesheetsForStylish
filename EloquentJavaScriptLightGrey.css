@@ -1,7 +1,11 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("eloquentjavascript.net") {
-  body { background-color:#cecece!important; }
+  body, .CodeMirror, .CodeMirror-gutters {
+    background-color:#cecece!important;
+  }
   
-  img { filter: brightness(0.81)!important; }
+  img {
+    filter: brightness(0.81)!important;
+  }
 }
