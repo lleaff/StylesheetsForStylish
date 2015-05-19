@@ -1,11 +1,38 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("eloquentjavascript.net") {
-  body, .CodeMirror, .CodeMirror-gutters {
+  
+  /* =Colors
+   * -------------------------------------- */
+  body, .CodeMirror, .CodeMirror-gutters, .sandbox-open-menu {
     background-color:#cecece!important;
+  }
+  
+  /* Darken code background */
+  code {
+    background-color:rgba(0,0,0,0.04)!important;
+  }
+  pre.snippet, .CodeMirror {
+    background-color:rgba(0,0,0,0.03)!important;
   }
   
   img {
     filter: brightness(0.81)!important;
   }
+  
+  
+  /* =Fonts
+   * -------------------------------------- */
+  body {
+    font-family: "Avenir Next Lt Pro Regular", "Avenir Next Lt Pro", Georgia,"Nimbus Roman No9 L","Century Schoolbook L",serif;
+    font-stretch: normal;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  
+  code, pre, .CodeMirror {
+    font-size: 17px; /* Default: 18px */
+    font-family: "Meslo LG S DZ", "PT Mono",monospace;
+   }
+  
 }
