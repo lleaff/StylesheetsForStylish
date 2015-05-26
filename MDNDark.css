@@ -76,6 +76,9 @@ th,
 .submenu,
 .from-search-toc {
 	background: #181818 !important; }
+	
+.search-pane {
+	background: #1f1f1f!important; }
 
 /* Naviguation links on the left */
 
@@ -101,8 +104,11 @@ table.diff {
 
 mark,
 .warning {
-	background: #933 !important;
+	background: #5f3333!important;
 	border-color: transparent !important; }
+	
+search-results-container mark {
+	background: #000 !important; }
 
 /* example; .experimental: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
 
@@ -120,10 +126,8 @@ border-color: #664 !important; } */
 .warning-review,
 .note,
 /* Eyedropper */
-
 .geckoVersionNote,
 /* nsILocalFile */
-
 .geckoVersionHeading {
 	background: #333 !important;
 	border-color: #555 !important; }
@@ -259,6 +263,11 @@ option:checked {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	border-left-color: #346 !important; }
+	
+/* Code font */
+code, pre, code[class*="language-"], pre[class*="language-"] {
+    font-family: "Meslo LG S DZ", Monaco, Consolas,"Andale Mono",monospace!important; /* +Meslo, better rendered than Monaco on Linux */
+	}
 
 /* comments */
 
@@ -380,4 +389,4 @@ footer {
 
 footer p::after {
 	display: none!important; }
- }
+}
