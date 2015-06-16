@@ -1,0 +1,11 @@
+@namespace page url(http://www.w3.org/1999/xhtml);
+@namespace chrome url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Command line */
+chrome|*.devtools-monospace {
+  font-size: 100%!important; /* Default: 80% */
+}
+/* Code and inspector side panel */
+page|*.devtools-monospace {
+  font-size: 90%!important; /* Default: 80% */
+}
