@@ -1,0 +1,37 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nodejs.org") {
+	body.apidoc {
+		background: #efefef!important;
+	}
+
+	p code {
+		background: #e5e5e5!important;
+		padding: 0 0.2em;
+	}
+
+	a {
+		color: #ef4090!important;
+	}
+
+	#toc h2 {
+		color: #aa306f!important;
+	}
+
+	.api_stability_2 {
+		background-color: #6fb57f!important;
+	}
+	.api_stability_0 *, .api_stability_1 *, .api_stability_2 *, .api_stability_3 *, .api_stability_4 *, .api_stability_5 {
+		color: #fff!important;
+	}
+
+	pre {
+		background-color: #f8f5f4!important;
+	}
+	.sh_sourceCode .sh_string, .sh_sourceCode .sh_regexp, .sh_sourceCode .sh_number, .sh_sourceCode .sh_specialchar {
+		color: #ef4090;
+	}
+	.sh_sourceCode .sh_keyword {
+		color: #239;
+	}
+}
