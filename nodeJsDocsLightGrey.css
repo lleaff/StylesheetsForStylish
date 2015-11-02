@@ -23,6 +23,16 @@
 		color: #ef4090!important;
 	}
 
+	#intro a {
+		color: #555!important;
+	}
+	#column2 ul li a {
+		color: #8a7980!important;
+	}
+
+	#column2 ul li a.active {
+		border-bottom: 1px solid #8a7980!important;
+	}
 	#toc h2 {
 		color: #aa306f!important;
 	}
@@ -35,7 +45,7 @@
 	}
 
 	pre {
-		background-color: #f8f5f4!important;
+		background-color: #f8f5f4;
 	}
 	.sh_sourceCode .sh_string, .sh_sourceCode .sh_regexp, .sh_sourceCode .sh_number, .sh_sourceCode .sh_specialchar {
 		color: #ef4090;
