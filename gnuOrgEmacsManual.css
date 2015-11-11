@@ -2,88 +2,101 @@
 
 @-moz-document url-prefix("http://www.gnu.org/software/emacs/manual"),
 url-prefix("https://www.gnu.org/software/emacs/manual") {
-  html {
-    background-color: #dddddd;
-  }
-  
-  body {
-    background-color: #f0f0f0;
-    padding-bottom: 0;
-  }
-  
-  .header {
-    padding-bottom: 1%;
-    padding-top: 0.2%;
-    background-color: #d8d8fa!important;
-    color: #444;
-  }
-  .header:first-of-type {
-    margin-bottom: 2%;
-  }
-  .header:last-child {
-    margin-top: 2.4%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-  .header a {
-    color: #085882;
-  }
-  .header p {
-    margin-bottom: 0;
-  }
+	html {
+		background-color: #dddddd;
+	}
 
-  
-  body h2, body h3, body h4, body h5 { 
-    margin-left: 2.9%;
-    margin-right: 2.9%;
-  }
-  body p {
-    margin-left: 3.4%;
-    margin-right: 3.4%;
-  }
-  div.example {
-    padding-left: 2em;
-    padding-top: 0.7em;
-    padding-bottom: 0.3em;
-    margin-bottom: 1em;
-    background: #f9f9f9;
-    border-top: 1px #fbfbfb solid;
-    border-bottom: 1px #eee solid;
-  }
-  
-  .menu tr {
-    background: #f4f4f4;
-  }
-  .menu td:first-of-type {
-    padding-left: 2em;
-  }
-  .menu td:last-of-type {
-    padding-right: 1.6em;
-    border-right-style: solid;
-    border-right-width: 1px;
-  }
-  
-  .menu td {
-    border-color: #ccc;
-    border-style: solid none solid none;
-  }
-  
-  hr {
-    border-color: #aaa;
-  }
-  
-  .footnotes-heading {
-    margin-bottom: 0.5em;
-  }
-  
-  .footnote h3, .footnote p {
-    font-size: 0.9em;
-  }
-  
-  .footnote h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    float: left;
-  }
-  
+	body {
+		background-color: #f0f0f0;
+		padding-bottom: 0;
+		box-shadow: 0px 0px 30px 10px #dbdbdb;
+		border: 1px solid #d8d8d8;
+		border-top: none;
+	}
+
+	.header {
+		padding-bottom: 1%;
+		padding-top: 0.2%;
+		background-color: #d8d8fa!important;
+		color: #444;
+	}
+	.header:first-of-type {
+		margin-bottom: 2%;
+		border-bottom: 1px solid #d5d5f8;
+	}
+	.header:last-child {
+		margin-top: 2.4%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		border-top: 1px solid #d5d5f8;
+	}
+	.header a {
+		color: #085882;
+	}
+	.header a:visited {
+		color: #022090;
+	}
+	.header p {
+		margin-bottom: 0;
+	}
+
+
+	body h2, body h3, body h4, body h5 { 
+		margin-left: 2.9%;
+		margin-right: 2.9%;
+	}
+	body p {
+		margin-left: 3.4%;
+		margin-right: 3.4%;
+	}
+
+	div.example {
+		padding-left: 2em;
+		padding-top: 0.9em;
+		padding-bottom: 0.2em;
+		margin-bottom: 1em;
+		background: #f9f9f9;
+		border-top: 1px #fbfbfb solid;
+		border-bottom: 1px #eee solid;
+	}
+
+	.subsection {
+		margin-bottom: 0.4em;
+	}
+
+	.menu tr {
+		background: #f4f4f4;
+	}
+	.menu td:first-of-type {
+		padding-left: 2em;
+	}
+	.menu td:last-of-type {
+		padding-right: 1.6em;
+		border-right-style: solid;
+		border-right-width: 1px;
+	}
+
+	.menu td {
+		border-color: #ccc;
+		border-style: solid none solid none;
+	}
+
+	hr {
+		border-color: #aaa;
+	}
+
+	.footnotes-heading {
+		margin-bottom: 0.5em;
+	}
+
+	.footnote h3, .footnote p {
+		font-size: 0.9em;
+	}
+
+	.footnote h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+		float: left;
+	}
+
 }
