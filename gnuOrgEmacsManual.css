@@ -1,0 +1,73 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("http://www.gnu.org/software/emacs/manual"),
+url-prefix("https://www.gnu.org/software/emacs/manual") {
+	html {
+		background-color: #dddddd;
+	}
+
+	body {
+		background-color: #f0f0f0;
+		padding-bottom: 0;
+	}
+
+	.header {
+		padding-bottom: 1%;
+		padding-top: 0.2%;
+		background-color: #d8d8fa!important;
+		color: #444;
+	}
+	.header:first-of-type {
+		margin-bottom: 2%;
+	}
+	.header:last-child {
+		margin-top: 2.4%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	.header a {
+		color: #085882;
+	}
+	.header p {
+		margin-bottom: 0;
+	}
+
+
+	body h2, body h3, body h4, body h5 { 
+		margin-left: 2.9%;
+		margin-right: 2.9%;
+	}
+	body p {
+		margin-left: 3.4%;
+		margin-right: 3.4%;
+	}
+
+	.menu td:first-of-type {
+		padding-left: 2em;
+	}
+
+	.menu td {
+		border-color: #aaa;
+		border-right: none;
+		border-left: none;
+	}
+
+	hr {
+		border-color: #aaa;
+	}
+
+	.footnotes-heading {
+		margin-bottom: 0.5em;
+	}
+
+	.footnote h3, .footnote p {
+		font-size: 0.9em;
+	}
+
+	.footnote h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+		float: left;
+	}
+
+}
