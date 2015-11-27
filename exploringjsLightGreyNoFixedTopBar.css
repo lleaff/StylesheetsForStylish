@@ -1,0 +1,33 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("exploringjs.com") {
+	body, #top-bar, aside.blurb {
+		background-color: #f9f7f0;
+	}
+
+	body {
+		padding-top: 0;
+	}
+
+	#top-bar {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		margin-top: -1.5em;
+	}
+
+	h2 {
+		margin-top: 10px;
+	}
+
+	#top-bar:not(:hover),
+	#top-bar:not(:hover) a[href="https://leanpub.com/exploring-es6/"],
+	#top-bar:not(:hover) a[href="http://www.2ality.com/p/donate.html"] {
+		color: transparent;
+	}
+
+	#top-bar-content b {
+		color: #000;
+	}
+}
