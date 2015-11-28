@@ -1,0 +1,58 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("https?:\/\/([a-z]+\.)?google\.([a-zA-Z]+)\/search.*") {
+
+	body, #appbar, #hdtbSum {
+		background-color: #faf8f6;
+	}
+
+	.sfbgg, /* top bar */
+	#fbar /* footer */
+	{
+		background: #f0eeec;
+	}
+
+	/* Categories (All, Images, Videos, ...) and Settings (Personal/Global search) bar */
+	#hdtbSum {
+		border-bottom-color: #e5e5e5; /* default: #EBEBEB */
+	}
+
+	/* Search field */
+	.sbibod, .sbib_a {
+		background: #fbf9f7; /* #fdfcfa; */
+	}
+
+
+	a:link, /* Search result link */
+	.w, #prs a:visited, #prs a:active, .q:active, .q:visited, .kl:active, .tbotu {
+		color: #180aaf; /* default: #1A0DAB; */
+	}
+
+	.a,
+	cite, /* Search result url */
+	cite a:link, cite a:visited, .cite, .cite:link, #_bGc > i, .bc a:link {
+		color: #006918; /* default: #006621; */
+	}
+
+	/* Search result description */
+	.s {
+		color: #404040; /* default: #545454 */
+	}
+
+	/* "Missing: mySearchTerm" annotation under search result */
+	._Tib span, ._Tib s {
+		color: #d05050;
+	}
+
+	/* Vertical <hr> separators */
+	.rgsep {
+		background-color: rgba(0, 0, 0, 0.1);
+		color: rgba(0, 0, 0, 0.1);
+	}
+
+	/* SafeSearch button text */
+	a.ab_button, a.ab_button:visited {
+		color: #444; /* default: #444 */
+	}
+
+}
