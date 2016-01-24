@@ -1,0 +1,32 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("book.realworldhaskell.org") {
+  .comment_body {
+    font-size: 130%;
+  }
+  
+  .book, .preface, .chapter, .appendix, .bibliography, .basetemplate, body {
+    background: #F8F4E7;
+  }
+  
+  /*
+  body {
+    background: #eae4e2;
+  }
+  */
+  
+  div.note, div.tip {
+    background: #ffffc9;
+    border-color: #E4E4A0;
+  }
+  
+  .commenttoggle {
+    color: #888477;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .commenttoggle:hover {
+    opacity: 1;
+    transition: ease-in 0.5s;
+  }
+}
